@@ -35,8 +35,11 @@
     .headerset h2{font-size: 42px; text-shadow: 0 0 3px #0c0c0c, 0 0 5px #656574;}
     .headerset h1{font-size: 82px; font-weight: bold;}
 
+        .loginregister{display: none;}
+
     @media(max-width: 650px) {
     .login {display:none;}
+        .loginregister{display: initial;}
     }
 
 
@@ -45,6 +48,7 @@
     font-size: 40px;} 
     .bgimg{height:720px}
     }
+
 
 </style>
 
@@ -106,7 +110,7 @@
         padding: 50px 0px 50px;
     }
     .portfolio h1{font-size: 50px; font-weight: bold;}    
-    .card {margin-top: 30px;}
+    .card {margin-top: 30px;  height:450px ; }
     .card img{
             height : 200px;
     }
@@ -124,8 +128,6 @@
             <div class="container container1">
                 <a href="index.html" class="navbar-brand text-warning font-weight-bold"> <img src="LOGO.png" height="50px" width="60px"  > ChatterBOX Blogs</a>
                 
-                
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -133,6 +135,7 @@
             <div class="collapse navbar-collapse" id="collapsenavbar">
 
                 <ul class="navbar-nav ml-auto text-center">
+                    
                     <li class="navbar-item">
                         <a href="index.html" class="nav-link text-white "><i class="fa fa-home fa-1x text-white " ></i> HOME </a>
                     </li>
@@ -145,8 +148,13 @@
                     <li class="navbar-item">
                         <a href="aboutus.html" class="nav-link text-white"><i class="fa fa-address-book fa-1x text-white"></i> ABOUT</a>
                     </li>
+                    <hr>
+                    <li class="navbar-item loginregister">
+                        <a href="index.html" class="nav-link text-white "><i class="fa fa-home fa-1x text-white " ></i> Login/Register </a>
+                    </li>
                 </ul>
 
+                
 
             </div>
             
@@ -205,87 +213,88 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.intel.com/content/dam/www/public/us/en/images/programmable/16x9/security-16x9.jpg.rendition.intel.web.480.270.jpg" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/android_auto_1606979087473_1606979170374_1607227374129.png">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-1</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">Android Auto (Android Auto)</h2>
                     </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.cisco.com/c/en/us/products/security/what-is-it-security/jcr:content/Grid/category_atl_42d8/layout-category-atl/anchor_info_670b/image.img.jpg/1575361669908.jpg" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/image_-_2020-12-01T085321.233_1606793004187_1606793014354_1607229463106.jpg" class="card-img img-fluid">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-2</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">Chrome 88 to bring video tutorials, search tab, and more
+                        </h2>
                     </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.leapit.co.uk/wp-content/uploads/2019/11/Cyber-Security-Importance-1080x675.jpeg" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/600mp_1607232432903_1607232448828.jpg" class="card-img img-fluid">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-3</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">Samsung is working on a 600-megapixel mobile camera sensor</h2>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.solarwindsmsp.com/sites/solarwindsmsp/files/blog/2019/10/1910_BP_Types_Network_Security_720x356_v1_BT.png" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-4</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://securityonline.info/wp-content/uploads/2019/07/w_pacb101c8.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-5</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_792727282.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-6</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.thalesgroup.com/sites/default/files/database/assets/images/2018-10/thales%20infographie%20cybersecurity%20A4%20UK.JPG" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/2020-12-05T110537Z_1_LYNXMPEGB4077_RTROPTP_3_TESLA-EUROPE_1607256679827_1607256705405.JPG" class="card-img img-fluid">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-7</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">Tesla shares first diversity report: Here's what it says</h2>
                     </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.uptunotes.com/wp-content/uploads/2018/07/CYBER-SECURITY-RHU001A.jpg" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/Cyber_security_1607258714774_1607258744312.jpg" class="card-img img-fluid">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-8</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">UAE target of cyber-attacks after Israel deal</h2>
                     </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Screenshot_2020-12-05_at_2.12._1200x768.png?VzlON1zKnLURH1kOCLIrAuhtpa.y3CjG&size=770:433" class="card-img img-fluid">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-9</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">WhatsApp users may lose access to the app if they don’t agree to terms of service in 2021</h2>
                     </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                <div class="card">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Screenshot_2020-12-05_at_12.16_1200x768.png?zqCXVBDgNTFoGyEFVsPfDBqdhePJxN84&size=770:433" class="card-img img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Apple announces free repair program for iPhone 11 users having touchscreen issues</h2>
+                    </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                <div class="card">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/pubg_mobile_india_release_1200x768.jpeg?EpXMUjwcl5sldwbuE8LENeEt90zA0oqb&size=770:433" class="card-img img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">PUBG Mobile India release could be delayed, makers waiting for govt's nod</h2>
+                    </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                <div class="card">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/11/27/960x540/image_-_2020-09-28T130227.120_1601278410229_1601278414788_1601278431919_1606478680856.jpg" class="card-img img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Indian vaccine makers, healthcare institutions targeted by cyber attackers</h2>
+                    </div>
+                    <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
                 </div>
             </div>
         </div>
@@ -330,7 +339,7 @@
                         
                         <figcaption>
                             <h4>SAGAR</h4>
-                            <p>Content Creator</p>
+                            <p>Database Manager</p>
                             <p>(Team Member)</p>
 
                         </figcaption>
@@ -343,7 +352,7 @@
                         
                         <figcaption>
                             <h4>SUMIT MISHRA</h4>
-                            <p>Database Manager</p>
+                            <p>Content Creator</p>
                             <p>(Team Member)</p>
 
                         </figcaption>
@@ -394,9 +403,10 @@
                 <li><a href="#ourservices">Services</a></li>
                 <li><a href="#ourteam1">Team</a></li>
                 <li><a href="blog.html"> Latest Blogs</a></li>
+                <li><a href="https://scssindiatechnologies.github.io/CB-Blogs/cblogin.html">Login/Register</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-              </ul>
+            </ul>
   </div>
  </div>
 
