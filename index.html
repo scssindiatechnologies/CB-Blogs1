@@ -34,11 +34,15 @@
     .headerset h2{font-size: 42px; text-shadow: 0 0 3px #0c0c0c, 0 0 5px #656574;}
     .headerset h1{font-size: 82px; font-weight: bold;}
 
+    @media(max-width: 650px) {
+    .login {display:none;}
+    }
+
+
     @media (max-width: 1000px){
    .headerset h1{
     font-size: 40px;} 
     .bgimg{height:720px}
-
     }
 
 </style>
@@ -156,11 +160,15 @@
 <body>
     <div class="bgimg">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <div class="container">
+            <div class="container container1">
                 <a href="index.html" class="navbar-brand text-warning font-weight-bold"> <img src="LOGO.png" height="50px" width="60px"  > ChatterBOX Blogs</a>
+                
+                
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
             <div class="collapse navbar-collapse" id="collapsenavbar">
 
                 <ul class="navbar-nav ml-auto text-center">
@@ -178,10 +186,11 @@
                     </li>
                 </ul>
 
-            </div>
 
             </div>
-
+            
+            </div>
+           <a href="cblogin.html"> <span class="login text-danger"><i class="fa fa-sign-in m-2 fa-1x text-danger font-weight-bold"></i>Login</span> </a>
         </nav>
         
         <div class="container  text-center text-white headerset">
@@ -189,7 +198,7 @@
             <h2>Welcome To ChatterBOX BLOGS</h2>
             <h1>It's Nice Meeting You.</h1>
             <button class="btn btn-warning text-black btn-lg ">SUBSCRIBE</button><br>
-           <a href="#latestblogs"><span> <i class="fa fa-angle-double-down fa-3x text-warning text-center"></i></span> </a>
+           <a href="#latestblogs"><span> <i class="fa fa-angle-double-down fa-2x text-warning text-center m-3 fa-border rounded-circle"></i></span> </a>
         </div>
 
     </div>
@@ -218,7 +227,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto ">
                 <div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-lock fa-3x text-white"></i></div>            
             <h2>Security</h2>
-            <p>Lorem ipsum dolor sit, amet cons ectetur adipisicing elit. Suscipit assumenda vitae, vero, iure, 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit assumenda vitae, vero, iure, 
                 adipisci qui delectus rem atque praesentium excepturi neque repudiandae? Ut non magni facilis hic. 
                 Eos, dolores assumenda!</p>
             </div>
@@ -324,6 +333,60 @@
         
     </section>
 
+    <section class="ourteam m-4" id="ourteam1">
+        <div class="container text-center">
+            <h1>OUR AMAZING TEAM</h1>
+            <p>We are working on this website to share our TECHNICAL KNOWLEDGE with you.</p>
+            
+            <div class="row font-weight-bold">
+                <div class="col-lg-3 col-md-3 col-sm-10 col-12 d-block mt-4">
+                    <figure class="figure">
+                        <img src="sparsh.JPG" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+                        
+                        <figcaption>
+                            <h4>SPARSH GOYAL</h4>
+                            <p>Web Developer</p>
+                        </figcaption>
+
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-10 col-12 d-block mt-4">
+                    <figure class="figure">
+                        <img src="chirag.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+                        
+                        <figcaption>
+                            <h4>CHIRAG GUPTA</h4>
+                            <p>Web Designer</p>
+                        </figcaption>
+
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-10 col-12 d-block mt-4">
+                    <figure class="figure">
+                        <img src="sagar.JPG" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+                        
+                        <figcaption>
+                            <h4>SAGAR</h4>
+                            <p>Content Creator</p>
+                        </figcaption>
+
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-10 col-12 d-block mt-4">
+                    <figure class="figure">
+                        <img src="sumit.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+                        
+                        <figcaption>
+                            <h4>SUMIT MISHRA</h4>
+                            <p>Database Manager</p>
+                        </figcaption>
+
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <footer class="footer_style">
@@ -338,7 +401,7 @@
     </div>
 
   <div class="col-md-3 col-12">
-    <h4>Contact Us</h4>
+    <h4 id="contact">Contact Us</h4>
               <dl>
                 <dt>Address:</dt>
                 <dd> <a href="https://goo.gl/maps/vuW2SeoPbNUaBQWEA" target="blank" > <i class="fa fa-map text-white"></i> New Delhi ,India</a></dd>
@@ -360,11 +423,12 @@
   <div class="col-md-2 col-12 links ">
    <h4>Links</h4>
               <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#ourservices">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact">Contacts</a></li>
-                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#ourteam1">Team</a></li>
+                <li><a href="blog.html"> Latest Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
               </ul>
   </div>
  </div>
