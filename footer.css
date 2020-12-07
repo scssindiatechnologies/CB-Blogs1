@@ -1,9 +1,12 @@
 
 
 
+        .loginregister{display: none;}
+
     @media(max-width: 650px) {
-        .login {display:none;}
-        }
+    .login {display:none;}
+        .loginregister{display: initial;}
+    }
 
 /*Footer CSS*/
     *{
