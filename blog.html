@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -15,11 +14,11 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<!-- -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-<link rel="icon" href="LOGO.png" >
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<link rel="icon" href="LOGO.png" >
 <link rel="stylesheet" href="footer.css">
 
 
@@ -32,12 +31,87 @@
         padding:30px 0px 50px;
     }
     .portfolio h1{font-size: 50px; font-weight: bold;}    
-    .card {margin-top: 30px;}
+   
     .card img{
             height: 200px;
+            
+    }
+    .card {margin-top: 30px;  height:500px ; }
+ 
+    @media(max-width:650px){
+        .card{height:auto}
+        .card h2 {font-size: 20px;}
+
     }
 
+    .modal-open{
+        padding: 8px 16px;
+        background: royalblue;
+        color: white;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+    }
 
+    .modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 2; /* Sit on top */
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,0.5);
+animation: modal-open .5s;
+overflow: auto;
+}
+
+.modal-content {
+background: #fefefe;
+margin: 10% auto;
+padding: 8px 24px;
+border: 1px solid #888;
+border-radius: 4px;
+width: 80%; /* Could be more or less, depending on screen size */
+z-index: 4;
+}   
+.modal-header{font-weight: 500;
+padding: 10px 0;
+text-align: left;
+font-size: 26px;}
+
+.modal-header .modal-close
+{ float: right;
+font-size: 20px;
+background: lightgray;
+border: 0;
+outline: 0;
+padding: 4px 8px; 
+border-radius: 10%;
+
+}
+.modal-body{color: darkslategray;
+padding: 15px 0;}
+
+    .modal-footer{
+        padding: 15px 0;
+    }
+    .modal-footer .modal-close{
+        padding: 8px 16px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        color: dodgerblue;
+    }
+
+    @keyframes modal-open{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 
 </style>
 
@@ -68,14 +142,14 @@
                     </li>
                     <hr>
                     <li class="navbar-item loginregister">
-                        <a href="cblogin.html" class="nav-link text-white "><i class="fa fa-home fa-1x text-white " ></i> Login/Register </a>
+                        <a href="Registration.html" class="nav-link text-white "><i class="fa fa-home fa-1x text-white " ></i> Login/Register </a>
                     </li>
                 </ul>
 
             </div>
 
             </div>
-            <a href="cblogin.html"> <span class="login text-danger"><i class="fa fa-sign-in m-2 fa-1x text-danger font-weight-bold"></i>Login</span> </a>
+            <a href="Registration.html"> <span class="login text-danger"><i class="fa fa-sign-in m-2 fa-1x text-danger font-weight-bold"></i>Login</span> </a>
 
         </nav>
         
@@ -87,243 +161,651 @@
             <p>Here you can find latest technology based content.</p>
 
             <hr>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/android_auto_1606979087473_1606979170374_1607227374129.png">
-                        <div class="card-body">
-                            <h2 class="card-title">Android Auto (Android Auto)</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/image_-_2020-12-01T085321.233_1606793004187_1606793014354_1607229463106.jpg" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">Chrome 88 to bring video tutorials, search tab, and more
-                            </h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/600mp_1607232432903_1607232448828.jpg" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">Samsung is working on a 600-megapixel mobile camera sensor</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/2020-12-05T110537Z_1_LYNXMPEGB4077_RTROPTP_3_TESLA-EUROPE_1607256679827_1607256705405.JPG" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">Tesla shares first diversity report: Here's what it says</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/Cyber_security_1607258714774_1607258744312.jpg" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">UAE target of cyber-attacks after Israel deal</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Screenshot_2020-12-05_at_2.12._1200x768.png?VzlON1zKnLURH1kOCLIrAuhtpa.y3CjG&size=770:433" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">WhatsApp users may lose access to the app if they don’t agree to terms of service in 2021</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Screenshot_2020-12-05_at_12.16_1200x768.png?zqCXVBDgNTFoGyEFVsPfDBqdhePJxN84&size=770:433" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">Apple announces free repair program for iPhone 11 users having touchscreen issues</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/pubg_mobile_india_release_1200x768.jpeg?EpXMUjwcl5sldwbuE8LENeEt90zA0oqb&size=770:433" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">PUBG Mobile India release could be delayed, makers waiting for govt's nod</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                    <div class="card">
-                        <img src="https://images.hindustantimes.com/tech/img/2020/11/27/960x540/image_-_2020-09-28T130227.120_1601278410229_1601278414788_1601278431919_1606478680856.jpg" class="card-img img-fluid">
-                        <div class="card-body">
-                            <h2 class="card-title">Indian vaccine makers, healthcare institutions targeted by cyber attackers</h2>
-                        </div>
-                        <a href="#"><span class="text-info float-right m-1">Read More<i class="fa fa-angle-double-right text-danger"></i></span></a>
-                    </div>
-                </div>
-            </div>
-            <hr>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.intel.com/content/dam/www/public/us/en/images/programmable/16x9/security-16x9.jpg.rendition.intel.web.480.270.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-1</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/s3-news-tmp-90538-pinterest--default--1280_1608009536977_1608009542510.jpg">
+                        <div class="card-body">
+                            <h2 class="card-title">Pinterest to pay $22.5 mn to settle gender discrimination suit</h2>
+                        </div>
+                        <button class="modal-open" data-modal="modal1">Read More</button>
+                        <div class="modal" id="modal1">
+                          <div class="modal-content">
+                          <div class="modal-header" >
+                            Pinterest to pay $22.5 mn to settle gender discrimination suit <button class="icon modal-close  " > <i class="material-icons ">close</i> </button> </div>
+                            <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/s3-news-tmp-90538-pinterest--default--1280_1608009536977_1608009542510.jpg">
+                            <div class="modal-body">Popular online bulletin board Pinterest will pay former chief operating officer Francoise Brougher $20 million in a deal reached to settle a gender discrimination suit, a regulatory filing showed Monday.
+                            The settlement includes Pinterest investing another $2.5 million to increase the presence of women and other under-represented groups in the tech industry, according to a joint statement.
+                            "Pinterest recognizes the importance of fostering a workplace environment that is diverse, equitable and inclusive and will continue its actions to improve its culture," read a joint statement by Brougher and Pinterest.
+                            Brougher filed a lawsuit earlier this year, accusing San Francisco-based Pinterest of paying her less than male colleagues, leaving her out of decision making, and subjecting her to a hostile work environment, then firing her after she spoke out against the treatment, according to media reports.
+                            "Although 70 percent of Pinterest's users are women, the company is steered by men with little input from female executives," Brougher said in a post on Medium when the suit was filed in August.
+                          </div>
+                          <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/2020-12-15T015108Z_1_LYNXMPEGBE02H_RTROPTP_3_APPLE-INDIA-WISTRON_1607999956087_1607999970756.JPG" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">Apple supplier Wistron puts India plant damage at up to $7 million</h2>
+                        </div>
+                        <button class="modal-open" data-modal="modal2">Read More</button>
+                        <div class="modal" id="modal2">
+                          <div class="modal-content">
+                          <div class="modal-header" >Apple supplier Wistron puts India plant damage at up to $7 million<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                               </div> <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/2020-12-15T015108Z_1_LYNXMPEGBE02H_RTROPTP_3_APPLE-INDIA-WISTRON_1607999956087_1607999970756.JPG" alt="">
+                          <div class="modal-body">The ransacking of an iPhone manufacturing facility in India caused up to T$200 million ($7.12 million) in damage though production facilities were not as badly hit as reported, its Taiwan-based operator Wistron Corp said on Tuesday.
+                            Thousands of contract workers gathered on the grounds of theWistron site on the outskirts of India's tech hub of Bengaluru on Saturday demanding unpaid wages and better working hours. As police arrived, the crowd turned violent and video from the scene showed people armed with rods and sticks smashing equipment and vandalising cars. In a police report seen by Reuters, Wistron estimated damages worth $60 million.
+                            However, in a statement to the Taiwan Stock Exchange on Tuesday, the company said major production facilities and warehouses had not suffered as serious damage as reported by local media, and that it was initially estimating losses at T$100-200 million.
+                            The company is doing its utmost to get the plant back up and running, it said. Wistron shares fell around 2.5% in early Asia trade, underperforming Taiwan's broader stock market.
+                            "The company has cooperated with the relevant authorities and the police investigation and continues to negotiate with the insurance company," Wistron added, without elaborating.
+                            Apple Inc said on Monday it was investigating whether Wistron had flouted supplier guidelines. Apple said it was sending staff and auditors to the site andwas cooperating with police in their investigation. Wistron is one of Apple's top global suppliers.  
+                          </div>
+                          <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                          </div>
+                      </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/Shazam_iOS_1608028411599_1608028425469.jpg" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Shazam’s iOS interface just got revamped and there’s also a web beta version</h2>
+                        </div>
+                        <button class="modal-open" data-modal="modal3">Read More</button>
+                        <div class="modal" id="modal3">
+                          <div class="modal-content">
+                          <div class="modal-header" >Shazam’s iOS interface just got revamped and there’s also a web beta version<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                               </div> <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/Shazam_iOS_1608028411599_1608028425469.jpg" class="card-img img-fluid">
+
+                          <div class="modal-body">Apple has revamped the Shazam app on iOS with a new modern look and a design language that’s in line with the recent UI updates on Apple Music.
+                            Now, when you launch the app on the iPhone, the screen is dominated by the central button, the tap to Shazam, with access to recently identified music that can be seen by swiping up. Apple has also added the ability to identify songs through the web browser for the first time ever and this is available in beta on shazam.com.
+                            Apple had announced last month that Shazam had witnessed an excess of 200 million monthly active users across iOS and Android. And in case you did not remember, Apple acquired Shazam in 2017 for the “synergies with its music business”.
+                            The main task that Shazam needs to do, that is identify a song, has been prioritised with access to previously Shazamed tracks that can be found in the pull-up drawer at the bottom of the home screen. The update has also increased the reliability of syncing Shazam tracks to either Apple Music or Spotify.
+                            Shazam’s song identification is now also available on the web at shazam.com. Users just need to head over to the website to Shazam tracks on the web browser and this is launching in beta for now and is currently compatible with Chrome, Firefox and Safari on macOS and Chrome OS.
+                            
+                          </div>
+                          <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.cisco.com/c/en/us/products/security/what-is-it-security/jcr:content/Grid/category_atl_42d8/layout-category-atl/anchor_info_670b/image.img.jpg/1575361669908.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-2</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                  <div class="card">
+                      <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/2020-12-14T235850Z_1004626267_RC2BNK9ZE8IF_RTRMADP_3_BRITAIN-TECH-REGULATIONS_1608002397612_1608002415407.JPG">
+                      <div class="card-body">
+                          <h2 class="card-title">Facebook, Twitter face British fines if fail on harmful content</h2>
+                      </div>
+                      <button class="modal-open" data-modal="modal4">Read More</button>
+                      <div class="modal" id="modal4">
+                        <div class="modal-content">
+                        <div class="modal-header" >Facebook, Twitter face British fines if fail on harmful content<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                             </div>                      <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/2020-12-14T235850Z_1004626267_RC2BNK9ZE8IF_RTRMADP_3_BRITAIN-TECH-REGULATIONS_1608002397612_1608002415407.JPG">
+
+                        <div class="modal-body">Facebook, Twitter and TikTok face fines of up to 10% of turnover if they fail to remove and limit the spread of illegal content under laws proposed by Britain on Tuesday.
+                            Tech platforms will also need to do more to protect children from being exposed to grooming, bullying and pornography, the government said, to ensure the safety of children online.
+                            "We are entering a new age of accountability for tech to protect children and vulnerable users, to restore trust in this industry, and to enshrine in law safeguards for free speech," Britain's Digital Secretary Oliver Dowden said.
+                            Governments globally are wrestling over measures to better control illegal or dangerous content on social media, with the European Union set to unveil its own package on Tuesday.
+                            Britain's new rules, which will be introduced in legislation next year, could lead to sites which break the rules being blocked and senior managers held liable for content.
+                            Facebook and Google said in February they would work with the government on the regulations. Both companies said they took safety extremely seriously and they had already changed their policies and operations to better tackle the issue.
+                            British media regulator Ofcom will be given the power to fine companies up to 18 million pounds ($24 million) or 10% of global turnover, whichever is higher, for breaking the rules.
+                            It will also be able to block non-compliant services from being accessed in Britain. 
+                            Online journalism and reader comments on news publishers' websites will be exempt to safeguard freedom of expression.
+                            
+                        </div>
+                        <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                        </div>
                     </div>
-                </div>
+                  </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                  <div class="card">
+                      <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/image_-_2020-12-15T143425.720_1608023076718_1608023081725.jpg" class="card-img img-fluid">
+                      <div class="card-body">
+                          <h2 class="card-title">Dell XPS 13 with 11th Gen Intel Core chipsets launched in India</h2>
+                      </div>
+                      <button class="modal-open" data-modal="modal5">Read More</button>
+                      <div class="modal" id="modal5">
+                        <div class="modal-content">
+                        <div class="modal-header" >Dell XPS 13 with 11th Gen Intel Core chipsets launched in India<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                             </div>                      <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/image_-_2020-12-15T143425.720_1608023076718_1608023081725.jpg" class="card-img img-fluid">
+
+                        <div class="modal-body">Dell has launched the XPS 13 with the latest 11th Gen Intel Core processors in India. Dell launched its premium laptop earlier this year, and it has now made its way to India.
+                            Dell XPS 13 starts at ₹1,50,990 for the 11th Gen Intel Core i5 variant. It is currently available at select Dell exclusive stores, and online via Amazon India. Dell XPS 13 also comes with the 11th Gen Intel Core i7 processor but this one will go on sale in January 2021. Dell is yet to reveal the price of this XPS 13 variant. The laptop comes in two colour options of Platinum Silver and Black Carbon Fiber.
+                            Dell’s newest offering comes with a 13.4-inch full HD+ display with a 16:10 aspect ratio, and Gorilla Glass 6 layered on top. The 11th Gen Intel chipsets are paired with Intel’s Iris Xe graphics, and are Intel Evo certified as well. Dell XPS 13 is said to last for up to 14 hours with its 52Whr battery. There’s also a 4K Ultra HD+ display option available on the XPS 13 but this brings the battery life down to 8 hours.
+                            On the i7 variant, you get 16GB of RAM and 1TB of SSD. The i5 variant of the Dell XPS 13 offers 8GB of RAM and 512GB of SSD.
+                            More features on the Dell XPS 13 include a fingerprint sensor, Windows Hello, and Wi-Fi 6. It also has two USB 3.0 ports. The laptop is also pretty light, weighing only 1.2 kilograms.
+                            
+                        </div>
+                        <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                        </div>
+                    </div>
+                  </div>   
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                  <div class="card">
+                      <img src="https://images.hindustantimes.com/tech/img/2020/12/14/960x540/hacker-1872291_1920_1590460396429_1590460410823_1607912818470.jpg" class="card-img img-fluid">
+                      <div class="card-body">
+                          <h2 class="card-title">Suspected Russian hackers spied on US Treasury emails</h2>
+                      </div>
+                      <button class="modal-open" data-modal="modal6">Read More</button>
+                      <div class="modal" id="modal6">
+                        <div class="modal-content">
+                        <div class="modal-header" >Suspected Russian hackers spied on US Treasury emails<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                             </div>                      <img src="https://images.hindustantimes.com/tech/img/2020/12/14/960x540/hacker-1872291_1920_1590460396429_1590460410823_1607912818470.jpg" class="card-img img-fluid">
+
+                        <div class="modal-body">Hackers believed to be working for Russia have been monitoring internal email traffic at the U.S. Treasury and Commerce departments, according to people familiar with the matter, adding they feared the hacks uncovered so far may be the tip of the iceberg.
+                            The hack is so serious it led to a National Security Council meeting at the White House on Saturday, said one of the people familiar with the matter.
+                            U.S. officials have not said much publicly beyond the Commerce Department confirming there was a breach at one of its agencies and that they asked the Cybersecurity and Infrastructure Security Agency and the FBI to investigate.
+                            National Security Council spokesman John Ullyot added that they "are taking all necessary steps to identify and remedy any possible issues related to this situation."
+                            The Russian foreign ministry did not immediately return a message seeking comment late Sunday.
+                            The cyber spies are believed to have gotten in by surreptitiously tampering with updates released by IT company SolarWinds, which serves government customers across the executive branch, the military, and the intelligence services, according to two people familiar with the matter. The trick - often referred to as a "supply chain attack" - works by hiding malicious code in the body of legitimate software updates provided to targets by third parties.
+                            
+                        </div>
+                        <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+             <div class="row">
+             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
                 <div class="card">
-                    <img src="https://www.leapit.co.uk/wp-content/uploads/2019/11/Cyber-Security-Importance-1080x675.jpeg" class="card-img img-fluid">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/14/960x540/2020-12-14T043102Z_1_LYNXMPEGBD071_RTROPTP_3_APPLE-CYDIA-LAWSUIT_1607933457283_1607933484544.JPG">
                     <div class="card-body">
-                        <h2 class="card-title">TITLE-3</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
+                        <h2 class="card-title">Google, Apple are banning tech that tracked you for years</h2>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.solarwindsmsp.com/sites/solarwindsmsp/files/blog/2019/10/1910_BP_Types_Network_Security_720x356_v1_BT.png" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-4</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://securityonline.info/wp-content/uploads/2019/07/w_pacb101c8.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-5</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_792727282.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-6</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thalesgroup.com/sites/default/files/database/assets/images/2018-10/thales%20infographie%20cybersecurity%20A4%20UK.JPG" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-7</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.uptunotes.com/wp-content/uploads/2018/07/CYBER-SECURITY-RHU001A.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-8</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-9</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-10</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-11</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-12</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-13</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-14</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-                <div class="card">
-                    <img src="https://www.thebalancecareers.com/thmb/5d9gGtTKE6lu_4SavIlG1XzNqvc=/1885x1414/smart/filters:no_upscale()/GettyImages-1028771818-a3a4c948b8c64a51a0ad80820a1f9c63.jpg" class="card-img img-fluid">
-                    <div class="card-body">
-                        <h2 class="card-title">TITLE-15</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae eos placeat! Et laboriosam illum impedit cumque molestiae esse, cupiditate veritatis! Hic quam fugit placeat eius modi sed? Voluptate, maxime.</p>
-                    </div>
+                    <button class="modal-open" data-modal="modal7">Read More</button>
+                    <div class="modal" id="modal7">
+                      <div class="modal-content">
+                      <div class="modal-header" >Google, Apple are banning tech that tracked you for years<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                           </div>                    <img src="https://images.hindustantimes.com/tech/img/2020/12/14/960x540/2020-12-14T043102Z_1_LYNXMPEGBD071_RTROPTP_3_APPLE-CYDIA-LAWSUIT_1607933457283_1607933484544.JPG">
+
+                      <div class="modal-body">Tech companies often use users’ location data to provide them with more accurate information on their platforms. But it doesn’t happen often that they piggyback on other platforms to track and sell your location data. But a company called X-Mode Social does exactly that. And now Apple and Google are working to put a stop to its operations.
+                        As per a report by The Wall Street Journal (via The Verge), Apple and Google are banning data broker firm X-Mode Social from collecting location data from the smartphones running on their respective mobile operating systems, that is, iOS and Android.
+                        To give you a quick brief about the data broker firm, X-Mode Social works by giving developers a piece of code, an SDK, to embed in their apps. This SDK tracks users’ location and then sends it to the company, which it then sells. In this arrangement, while X-Mode gets the location data, developers get paid a certain amount that is based on how many users the app has. As per a report by Motherboard, it has over 400 apps and it gathers information from 60 million users across the globe every month.
+                        Now, both Apple and Google have announced that they are asking developers to remove X-Mode’s SDK from their apps on their respective platforms. While Apple is giving developers a time period of two months to comply with the order, Google is giving developers a month with the ability to apply for an extension for up to 30 days. Both the companies have warned developers that if they fail to comply with the order, their apps could be removed from the App Store and the Play Store.
+                        
+                      </div>
+                      <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                      </div>
+                  </div>
                 </div>
             </div>
             
-        </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                <div class="card">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/Untitled_design-14_1607398937837_1607398947028.png" class="card-img img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">Some Android apps like Grindr, OkCupid, Bumble etc are vulnerable to major security flaw, says Check Point</h2>
+                    </div>
+                    <button class="modal-open" data-modal="modal8">Read More</button>
+                    <div class="modal" id="modal8">
+                      <div class="modal-content">
+                      <div class="modal-header" >Some Android apps like Grindr, OkCupid, Bumble etc are vulnerable to major security flaw, says Check Point<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                           </div>                    <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/Untitled_design-14_1607398937837_1607398947028.png" class="card-img img-fluid">
+
+                      <div class="modal-body">There is a major security flaw rooted in the Google Play Core library that is still plaguing many Android apps according to Check Point Software Technologies. Popular apps like Bumble, Grindr, OkCupid, Cisco Teams etc are a part of this vulnerable list going by a recent report.
+                        As per the analysis done by the security researchers at Check Point, the bug that Google had fixed in April 2020 is still affecting many apps and the app developers have not fixed the flaw on their end yet. This is putting millions of users at risk.
+                        The vulnerability is called CVE-2020-8913 and it allows hackers to inject a malicious code into vulnerable apps and then execute the code to get access to all the resources in the app. It is then used to steal sensitive data from other apps on the same device, said Check Point.
+                        The vulnerability puts users’ private data like login details, mail ID, passwords, financial details etc at risk and exposed for potent cyber theft.
+                        Many popular apps appear to have the CVE-2020-8913 vulnerability including Grindr, Bumble, Viberm OKCupid, Cisco Teams, PowerDirector, Yango Pro, Edge, Xrecorder etc. In September, 13% of the apps on Google Play that were using Google’s Play Core library, as analysed by Check Point and out of these 8% were still using the vulnerable version. Viber and Booking have now updated to new patched versions but the other apps have not yet.
+                        
+                      </div>
+                      <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                      </div>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                <div class="card">
+                    <img src="https://images.hindustantimes.com/tech/img/2020/12/05/960x540/cyber-security-1923446_1920_1607146516963_1607146526804.png" class="card-img img-fluid">
+                    <div class="card-body">
+                        <h2 class="card-title">As hospitals cope with a Covid-19 surge, cyber threats loom</h2>
+                    </div>
+                    <button class="modal-open" data-modal="modal9">Read More</button>
+                    <div class="modal" id="modal9">
+                      <div class="modal-content">
+                      <div class="modal-header" >As hospitals cope with a Covid-19 surge, cyber threats loom<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                           </div>                    <img src="https://images.hindustantimes.com/tech/img/2020/12/05/960x540/cyber-security-1923446_1920_1607146516963_1607146526804.png" class="card-img img-fluid">
+
+                      <div class="modal-body">By late morning on October 28, staff at the University of Vermont Medical Center noticed the hospital’s phone system wasn’t working.
+                        Then the internet went down, and the Burlington-based center's technical infrastructure with it. Employees lost access to databases, digital health records, scheduling systems and other online tools they rely on for patient care.
+                        Administrators scrambled to keep the hospital operational — cancelling non-urgent appointments, reverting to pen-and-paper record keeping and rerouting some critical care patients to nearby hospitals.
+                        In its main laboratory, which runs about 8,000 tests a day, employees printed or hand-wrote results and carried them across facilities to specialists. Outdated, internet-free technologies experienced a revival.
+                        “We went around and got every fax machine that we could,” said UVM Medical Center Chief Operating Officer Al Gobeille.
+                        The Vermont hospital had fallen prey to a cyberattack, becoming one of the most recent and visible examples of a wave of digital assaults taking US health care providers hostage as Covid-19 cases surge nationwide.
+                        The same day as UVM's attack, the FBI and two federal agencies warned cybercriminals were ramping up efforts to steal data and disrupt services across the health care sector.
+                        By targeting providers with attacks that scramble and lock up data until victims pay a ransom, hackers can demand thousands or millions of dollars and wreak havoc until they’re paid.
+                        
+                      </div>
+                      <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                        </div>
+                   </div>
+                  </div>
+             </div>
+           </div>
+         <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+              <div class="card">
+                  <img src="https://images.hindustantimes.com/tech/img/2020/11/26/960x540/2020-11-25T085828Z_1_LYNXMPEGAO0GR_RTROPTP_3_TECH-ANTITRUST-FACEBOOK_1606404095168_1606404115291.JPG">
+                  <div class="card-body">
+                      <h2 class="card-title">Millions of Facebook users pass on $650 million privacy jackpot</h2>
+                  </div>
+                  <button class="modal-open" data-modal="modal10">Read More</button>
+                  <div class="modal" id="modal10">
+                    <div class="modal-content">
+                    <div class="modal-header" >Millions of Facebook users pass on $650 million privacy jackpot<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                         </div>                  <img src="https://images.hindustantimes.com/tech/img/2020/11/26/960x540/2020-11-25T085828Z_1_LYNXMPEGAO0GR_RTROPTP_3_TECH-ANTITRUST-FACEBOOK_1606404095168_1606404115291.JPG">
+
+                    <div class="modal-body">Facebook Inc. will be making payouts to only about a quarter of the 6 million Illinois residents eligible for the biggest consumer privacy settlement in U.S. history.
+                        Based on a tally filed in court after Monday’s claims deadline, some 1.57 million people will probably pocket more than $300 each -- after about a third of the $650 million settlement fund is set aside for their attorneys and administrative costs -- from a lawsuit in which the social network was accused of collecting biometric images from its photo-tagging feature without consent.
+                        As class actions go, with nickel-and-dime payouts often not worth the effort of filing a claim, a case that ends up with a 25% buy-in from consumers is a success story. Frequently, fewer than 10% of eligible people file claims.
+                        In Facebook’s case, the judge was initially skeptical if a settlement of less than $1 billion was fair, considering that if users had taken the company to trial they could have sought damages of as much as $5,000 for each violation of the Illinois Biometric Privacy Information Act.
+                        To get U.S. District Judge James Donato on board, the company and the lawyers for consumers added an extra $100 million to what was originally a $550 million accord, and they promised an extra-aggressive outreach effort, which included pinging Facebook users directly through their accounts to alert them to the cash jackpot. Final approval of the deal is scheduled for early in 2021.
+                        
+                    </div>
+                    <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+              <div class="card">
+                  <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/125f8a8c-2f24-11eb-a8f0-5f006243e72b_1608017224663_1608017277132.jpg" class="card-img img-fluid">
+                  <div class="card-body">
+                      <h2 class="card-title">Apple’s new privacy labels on the App Store is now live: Here’s everything you need to know</h2>
+                  </div>
+                  <button class="modal-open" data-modal="modal12">Read More</button>
+                  <div class="modal" id="modal12">
+                    <div class="modal-content">
+                    <div class="modal-header" >Apple’s new privacy labels on the App Store is now live: Here’s everything you need to know<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                         </div>                  <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/125f8a8c-2f24-11eb-a8f0-5f006243e72b_1608017224663_1608017277132.jpg" class="card-img img-fluid">
+
+                    <div class="modal-body">At Apple’s Worldwide Developers Conference (WWDC) earlier this year in June, Apple had announced that all apps on the App Store would soon sport privacy labels. These privacy labels are easy-to-view summaries of data, in any form, that the app collects so as users get an idea of what they are parting with/sharing once they start using the app.
+                        All apps on the App Store need to show this privacy information on the app stores across iPhones, iPads, macOS, watchOS and tvOS including Apple’s own apps. Reporting privacy practices is a part of the app submission process and applies to all developers, including Apple.
+                        The main idea at play here is to make the developers’ data collection and use practices transparent so that you, the user, can make an informed choice before you download an app.
+                        All app developers were given a deadline (till December 8) to update their labels on the developer portal and the process is still ongoing.
+                        Now that these labels are live, the app product pages will show you what data the app collects, whether the app will use that data to track you or if the data will be linked to you. The data collected by any app has been classified into three categories - ‘Data used to track you’, ‘Data linked to you’, and ‘Data not linked to you’.
+                        ‘Data uses to track you’ refers to linking user or device data collected from an app with user or device data collected from the apps, websites of other companies and used for targeted advertising practices. Tracking also means sharing user or device data with data brokers.
+                        ‘Data linked to you’ is data that is tied solely to your identity through the user account on the app, your device etc.
+                        And these privacy labels are not all. With the new privacy updates, Apple is giving you more granular control over the types of data an app can access once it is downloaded.
+                        
+                    </div>
+                    <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                    </div>
+                </div>
+              </div>   
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+              <div class="card">
+                  <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/Cyber_security_1607258714774_1607258744312.jpg" class="card-img img-fluid">
+                  <div class="card-body">
+                      <h2 class="card-title">UAE target of cyber-attacks after Israel deal</h2>
+                  </div>
+                  <button class="modal-open" data-modal="modal13">Read More</button>
+                  <div class="modal" id="modal13">
+                    <div class="modal-content">
+                    <div class="modal-header" >UAE target of cyber-attacks after Israel deal<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                         </div>                  <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/Cyber_security_1607258714774_1607258744312.jpg" class="card-img img-fluid">
+                    <div class="modal-body">The United Arab Emirates was the target of cyber-attacks after establishing formal ties with Israel, the Gulf Arab state's cyber-security head said on Sunday.
+                        The UAE in August broke with decades of Arab policy when it agreed to forge ties with Israel in a move that angered Palestinians and some Muslim states and communities. Bahrain and Sudan have followed suit.
+                        "Our relationship, for example, with the normalisation with Israel really opened a whole huge attack from some other activists against the UAE," Mohamed Hamad al-Kuwaiti said during an onstage interview at a conference in Dubai.
+                        Kuwaiti said the financial sector was targeted but did not elaborate. He did not say if any of the attacks were successful or provide details on who the perpetrators were.
+                        He also told the conference that the number of cyber-attacks in the UAE increased sharply after the start of the coronavirus pandemic. Kuwaiti said traditionally many attacks in the region originate from Iran, without specifying who is behind them.
+                        Iran has also said that it has been a victim of hacking.
+                        
+                    </div>
+                       <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                       </div>
+                 </div>
+                </div>
+             </div>
+             </div>
+             <div class="row">
+                 <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                   <div class="card">
+                      <img src="https://images.hindustantimes.com/tech/img/2020/12/03/960x540/hacker-4031973_1920_1606477588282_1606477596634_1607002650132.jpg">
+                <div class="card-body">
+                    <h2 class="card-title">Indian companies face highest number of malware attacks after US, Japan</h2>
+                </div>
+                <button class="modal-open" data-modal="modal14">Read More</button>
+                <div class="modal" id="modal14">
+                  <div class="modal-content">
+                  <div class="modal-header" >Indian companies face highest number of malware attacks after US, Japan<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                       </div>                <img src="https://images.hindustantimes.com/tech/img/2020/12/03/960x540/hacker-4031973_1920_1606477588282_1606477596634_1607002650132.jpg">
+
+                  <div class="modal-body">India is on the third position when it comes to highest number of malware attacks, after the US and Japan, according to a 2020 Acronis Cyberthreats Report. It has been mentioned that 1168 malware detections were encountered per 1000 clients in a month. Also, Maze ransomware detections were reported at 7.8% in Q3 2020. 
+                    The report also warns users about cyber criminals who can now pivot their attacks from data encryption to data exfiltration. “Ransomware continues to be the leading threat in India with Maze ransomware accounting for nearly half of all known cases in 2020. Yet the Acronis Cyberthreats Report points to a growing trend of cybercriminals trying to maximize their financial gain. Not content to collect ransoms to decrypt infected data, they steal proprietary – and sometimes embarrassing – data before encrypting it. They then threaten to publicly release the stolen files if the victim doesn’t pay up,” says the report.
+                    It has been mentioned that while 31% of global and Indian companies reported daily cyberattacks in 2020, the frequency of attacks targeting their remote workers is projected to increase in 2021. That’s because the defenses for systems outside of the corporate network are more easily compromised, giving bad actors access to that organization’s data.
+                    
+                  </div>
+                  <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                  </div>
+              </div>
+            </div>
+         </div>
+         
+         <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+            <div class="card">
+                <img src="https://images.hindustantimes.com/tech/img/2020/11/27/960x540/image_-_2020-09-28T130227.120_1601278410229_1601278414788_1601278431919_1606478680856.jpg" class="card-img img-fluid">
+                <div class="card-body">
+                    <h2 class="card-title">Indian vaccine makers, healthcare institutions targeted by cyber attackers</h2>
+                </div>
+                <button class="modal-open" data-modal="modal15">Read More</button>
+                <div class="modal" id="modal15">
+                  <div class="modal-content">
+                  <div class="modal-header" >Indian vaccine makers, healthcare institutions targeted by cyber attackers<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                       </div>                <img src="https://images.hindustantimes.com/tech/img/2020/11/27/960x540/image_-_2020-09-28T130227.120_1601278410229_1601278414788_1601278431919_1606478680856.jpg" class="card-img img-fluid">
+
+                  <div class="modal-body">The healthcare space including vaccine makers and hospitals have continued to be prime targets for cyber attackers. More than 7 million attacks were recorded between October 1 and November 25 on the Healthcare sector-based Threat Intelligence Sensors network specifically simulated in India, according to research by CyberPeace Foundation.
+                    Researchers also pointed out a few trends in these continued cyberattacks. For instance, vulnerable exposed systems that were not monitored and faced the internet were among the most attacked system for the attackers. It further pointed out that the vulnerable internet-facing systems with remote desktop protocol enabled and old Windows server platform were among the most attacked.
+                    According to researchers, the healthcare sector began to suffer several ransomware attacks during the Covid-19 crisis. Cyber attackers targeted medical manufacturing sector, billing system etc through ransomware. The most common ransomware that has been seen during this COVID-19 situation is ‘NetWalker ransomware’, ‘PonyFinal ransomware’, ‘Maze ransomware’ etc, researchers added.
+                    
+                  </div>
+                  <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                  </div>
+              </div>
+            </div>   
+          </div>
+         <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+            <div class="card">
+                <img src="https://images.hindustantimes.com/tech/img/2020/10/22/960x540/image_(17)_1602676034048_1602676038273_1603351666267.jpg" class="card-img img-fluid">
+                <div class="card-body">
+                    <h2 class="card-title">Majority of Indian firms reported jump in cyber threats while WFH</h2>
+                </div>
+                <button class="modal-open" data-modal="modal16">Read More</button>
+                <div class="modal" id="modal16">
+                  <div class="modal-content">
+                  <div class="modal-header" >Majority of Indian firms reported jump in cyber threats while WFH<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                       </div>                <img src="https://images.hindustantimes.com/tech/img/2020/10/22/960x540/image_(17)_1602676034048_1602676038273_1603351666267.jpg" class="card-img img-fluid">
+
+                  <div class="modal-body">Even as Indian companies are adapting to a new normal of working from home, cybercriminals have stepped up their activities to take advantage of the situation. A new Cisco report corroborates the recent trend of growing cybercrimes targeting such organisations.
+                    According to Cisco’s Future of Secure Remote Work Report, 73% of organisations in India have experienced a 25% or more jump in either cyber threats or alerts since the outbreak of Covid-19. It also pointed out that many Indian firms were caught unprepared to make the needed transition to a remote workforce. About 65% of organisations had to implement cybersecurity measures to support remote working.
+                    Other top concerns raised by organisations included data privacy (66%) and protection against malware (62%).
+                    The report predicts a hybrid workplace model in the future – wherein employees shuffle between remote working and in the office. More than half, 53%, of firms in India said they expect more than half of their workforce to continue working from home after the pandemic is over. This compares to an average of just 28% of organizations with more than half of their workforce working remotely before the pandemic.
+                    
+                  </div>
+                  <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                  </div>
+              </div>
+                </div>
+             </div>
+          </div>
+         <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+              <img src="https://images.hindustantimes.com/tech/img/2020/10/01/960x540/image_-_2020-09-20T112037.803_1600581053501_1600581060022_1601581940552.jpg">
+              <div class="card-body">
+                  <h2 class="card-title">Global shipping industry hit with second cyber-attack in a week</h2>
+              </div>
+              <button class="modal-open" data-modal="modal17">Read More</button>
+              <div class="modal" id="modal17">
+                <div class="modal-content">
+                <div class="modal-header" >Global shipping industry hit with second cyber-attack in a week<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                     </div>              <img src="https://images.hindustantimes.com/tech/img/2020/10/01/960x540/image_-_2020-09-20T112037.803_1600581053501_1600581060022_1601581940552.jpg">
+
+                <div class="modal-body">The global shipping industry sustained a second cyber attack within a week that’s raising concern about disruptions to supply chains already straining to move goods heading into the usual peak season for consumer demand.
+                    The International Maritime Organization, a United Nations agency that serves as the industry’s regulatory body, said in a statement Thursday it has suffered “a sophisticated cyber attack against the organization’s IT systems.” A number of IMO web-based services are currently unavailable and the breach is affecting its public website and internal systems, it said.
+                    That attack followed the disclosure earlier this week by closely held CMA CGM SA, the world’s fourth-biggest container liner by capacity, that its information systems were compromised. The Marseille, France-based company said Thursday that offices are “gradually being reconnected to the network thus improving the bookings’ and documentation’s processing times.”
+                    
+                </div>
+                <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                </div>
+            </div>
+          </div>
+            </div>
+      
+         <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+              <img src="https://images.hindustantimes.com/tech/img/2020/08/30/960x540/b8e96509e8f34f09b00ad5920c2f6a8a-b8e96509e8f34f09b00ad5920c2f6a8a-0_1598796904520_1598796934361.jpg" class="card-img img-fluid">
+              <div class="card-body">
+                  <h2 class="card-title">Tesla targeted in failed ransomware extortion scheme</h2>
+              </div>
+              <button class="modal-open" data-modal="modal18">Read More</button>
+              <div class="modal" id="modal18">
+                <div class="modal-content">
+                <div class="modal-header" >Tesla targeted in failed ransomware extortion scheme<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                     </div>              <img src="https://images.hindustantimes.com/tech/img/2020/08/30/960x540/b8e96509e8f34f09b00ad5920c2f6a8a-b8e96509e8f34f09b00ad5920c2f6a8a-0_1598796904520_1598796934361.jpg" class="card-img img-fluid">
+
+                <div class="modal-body">In a tweet, Tesla CEO Elon Musk solved a mystery involving a 27-year-old Russian, an insider at an unnamed corporation and an alleged million-dollar payment offered to help trigger a ransomware extortion attack on the firm.
+                    Prosecutors declined to name the target, but Musk was happy to oblige.
+                    According to the billionaire, the scheme took aim at the electric car company's 1.9 million-square-foot factory in Sparks, Nevada, which makes batteries for Tesla vehicles and energy storage units.
+                    “This was a serious attack,” Musk tweeted Thursday night, responding to a Tesla blog post that detailed the brazen scheme.
+                    Defendant Egor Igorevich Kriuchkov tried to recruit a fellow Russian speaker who worked at the plant, according to a criminal complaint filed in US District Court in Nevada.
+                    Reaching out to the unnamed worker via WhatsApp in July, Kriuchkov allegedly flew to the United States with a Russian passport on a tourist visa and sought to entice the worker to betray Tesla.
+                    Kriuchkov allegedly took the worker, who he'd first met in 2016, on a road trip to Lake Tahoe before offering the person USD 1 million to plant malware on computer systems at “Victim Company A”.
+                    Kriuchkov floated the scheme at a Reno-area bar on August 3 after the two drank heavily until the last call, the complaint says.
+                    But the plant worker informed Tesla, which contacted the FBI and won the employee's cooperation. In subsequent meetings monitored and recorded by federal agents, Kriuchkov laid out a scheme to have the worker infect Tesla computers with a program that would steal valuable data before scrambling plant systems with ransomware, according to the complaint.
+                    Kriuchkov was quoted as saying the inside job would be camouflaged with a distributed denial-of-service-attack on plant computers from outside. Such attacks overwhelm servers with junk traffic. If Tesla didn't pay, the purloined data would be dumped on the open internet.
+                    The complaint says Kriuchkov told the Tesla worker that his organisation had executed similar “special projects” on other companies on multiple occasions, with one victim supposedly surrendering a USD 4 million ransom payment.
+                    According to the complaint, Kriuchkov added that his organisation employed sophisticated encryption that would mask the Tesla worker's participation and mentioned that one hacker in his group was a high-level employee of a government bank in Russia.
+                    The US Attorney's office for Nevada would not comment on whether Kriuchkov or any of his associates may have had ties to the Russian government.
+                    
+                </div>
+                <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                </div>
+              </div>
+              </div>   
+           </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+              <div class="card">
+              <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/2020-12-05T110537Z_1_LYNXMPEGB4077_RTROPTP_3_TESLA-EUROPE_1607256679827_1607256705405.JPG" class="card-img img-fluid">
+              <div class="card-body">
+                  <h2 class="card-title">Tesla shares first diversity report: Here's what it says</h2>
+              </div>
+              <button class="modal-open" data-modal="modal19">Read More</button>
+              <div class="modal" id="modal19">
+                <div class="modal-content">
+                <div class="modal-header" >Tesla shares first diversity report: Here's what it says<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                     </div>              <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/2020-12-05T110537Z_1_LYNXMPEGB4077_RTROPTP_3_TESLA-EUROPE_1607256679827_1607256705405.JPG" class="card-img img-fluid">
+
+                <div class="modal-body">Tesla Inc. released its first report on Diversity, Equity and Inclusion via a blog post late Friday, statistics that Silicon Valley tech companies and banks on Wall Street have been sharing for years.
+                    While the report showcases a heavy presence of minorities in its U.S. workforce, it highlights a lack of diversity with a predominantly male and White leadership team, and offers a peek into a relatively opaque structure without an organizational chart on its website that just lists four male executives as its only leadership.
+                    “I’m thrilled to finally see it,” Kristin Hull, the founder and chief executive of Nia Impact Capital, a social impact fund based in Oakland, California, that invests in Tesla, said in a phone call Saturday. “It’s a step in the right direction. We need to know more about where Tesla is heading, and I’d like more granularity and to see targets and more specific goals set, particularly for company culture.”
+                    Black and African-American employees represent 10% of Tesla’s U.S. workforce, but just 4% of managers at the level of director and above, according to the report.
+                    “We know that our numbers do not represent the deep talent pools of Black and African-American talent that exist in the U.S at every level -- from high school graduates to professionals,” Tesla said in the report. “Many of our programs in 2021 will focus on increasing Black and African-American representation, especially in leadership, while continuing the upward trend in new hires and promotions.”
+                    Hispanic and Latinx employees form 22% of the U.S. workforce, and also just 4% of its management at the director level and above. However, Asian employees make up 21% of its U.S. workers and 25% of its senior management -- skewing the ratio with two out of three minorities at the leadership level.
+                    
+                </div>
+                <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                 </div>
+              </div>
+             </div>
+             </div>
+         </div>
+            <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+           <div class="card">
+            <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/image_-_2020-11-21T143114.447_1605949272567_1605949278988_1607999757413.jpg">
+            <div class="card-body">
+                <h2 class="card-title">WhatsApp denies in SC allegations of data hacking by spyware Pegasus</h2>
+            </div>
+            <button class="modal-open" data-modal="modal20">Read More</button>
+            <div class="modal" id="modal20">
+              <div class="modal-content">
+              <div class="modal-header" >WhatsApp denies in SC allegations of data hacking by spyware Pegasus<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                </div>
+                <img src="https://images.hindustantimes.com/tech/img/2020/12/15/960x540/image_-_2020-11-21T143114.447_1605949272567_1605949278988_1607999757413.jpg">
+                <div class="modal-body">WhatsApp on Monday denied in the Supreme Court the allegations that its data can be hacked by Israeli sypware Pegasus, which had led to a controversy last year over breach of privacy following claims that Indian journalists and human rights activists were among those globally spied upon by unnamed entities.
+                    The issue cropped up before a bench headed by Chief Justice S A Bobde which was hearing a plea filed by Rajya Sabha MP Binoy Viswam seeking direction to the Reserve Bank of India (RBI) for framing regulation to ensure that data collected on UPI platforms is not “exploited” or used in any manner other than for processing payments.
+                    “An allegation is that WhatsApp data can be hacked by a software called Pegasus,” the bench, also comprising Justices A S Bopanna and V Ramasubramanian, told senior advocate Kapil Sibal, who was appearing for WhatsApp.
+                    Sibal said “these are all allegations. None of them are correct.”
+                    WhatsApp had said last year that it was suing an Israeli surveillance firm that is reportedly behind the technology that helped unnamed entities' spies to hack into phones of roughly 1,400 users.
+                    During the hearing conducted through video-conferencing on Monday, senior advocate Krishnan Venugopal, appearing for Viswam, told the bench that RBI has filed an affidavit in the matter and the National Payments Corporation of India (NPCI) should also make its stand clear in the matter.
+                    
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+              </div>
+             </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+           <div class="card">
+            <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/86976dfe-3616-11eb-8e2e-5a461a965df6_1607420460338_1607420501095.jpg" class="card-img img-fluid">
+            <div class="card-body">
+                <h2 class="card-title">PM Modi inaugurates Indian Mobile Congress 2020: Here’s what he said</h2>
+            </div>
+            <button class="modal-open" data-modal="modal21">Read More</button>
+            <div class="modal" id="modal21">
+              <div class="modal-content">
+              <div class="modal-header" >PM Modi inaugurates Indian Mobile Congress 2020: Here’s what he said<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                   </div>            <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/86976dfe-3616-11eb-8e2e-5a461a965df6_1607420460338_1607420501095.jpg" class="card-img img-fluid">
+
+              <div class="modal-body">Prime Minister Narendra Modi on Tuesday inaugurated the Indian Mobile Congress (IMC) 2020 today. At the event, which is being held virtually this year, PM Modi stressed on the importance of 5G deployment.
+                “Now, we need to work together to ensure timely roll-out of 5G network connectivity in order to leapfrog into the future and empower millions of Indians. We are also in fact embarking on a plan to ensure that over the next 3 years, every village will have high speed fibre optic connectivity,” PM Modi said while inaugurating IMC 2020 virtually.
+                In addition to 5G, the Prime Minister also talked about the importance of mobile telephony and innovation. “It is because of mobile technology that we are seeing billions of cashless transactions which boost formalisation and transparency...It is because of mobile technology that we will enable smooth contactless interface on toll booths,” PM Modi said on the occasion.
+                Lastly, PM Modi also touched on the issue of mobile technology being used to embark on Covid-19 vaccination drive.
+                “India is emerging as one of the most preferred destination for mobile manufacturing. It is of paramount importance, considering the fact that, it is with the help of mobile technology that we will embark on one of the world's largest COVID-19 vaccination drive,” he said.
+                
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+              </div>
+            </div>   
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/encourage-modi-launched-bhim-transactions-mobile-app_e665c688-d1a5-11e6-a11a-def9b3756538_1607433027916.jpg" class="card-img img-fluid">
+            <div class="card-body">
+                <h2 class="card-title">India Mobile Congress 2020: What PM Modi, Airtel and Jio heads said on telecom and 5G</h2>
+            </div>
+            <button class="modal-open" data-modal="modal22">Read More</button>
+            <div class="modal" id="modal22">
+              <div class="modal-content">
+              <div class="modal-header" >India Mobile Congress 2020: What PM Modi, Airtel and Jio heads said on telecom and 5G<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                   </div>            <img src="https://images.hindustantimes.com/tech/img/2020/12/08/960x540/encourage-modi-launched-bhim-transactions-mobile-app_e665c688-d1a5-11e6-a11a-def9b3756538_1607433027916.jpg" class="card-img img-fluid">
+              <div class="modal-body">Today marked the inauguration of India Mobile Congress 2020 wherein the prime minister Narendra Modi, along with other popular faces like Mukesh Ambani of Reliance Jio and Sunil Mittal of Bharti Airtel talked about technology and future. While the event will go on until December 10, we already have some major announcements and talks about the future of tech and telecom industry. So, here is a brief of what these three icons talked about and what are the key takeaways.
+                Prime Minister Narendra Modi stressed on the importance of 5G deployment. He said that 5G won’t just empower millions of Indians but will also facilitate innovation, one of which is ‘cashless transaction’. 
+                “It is because of mobile technology that we are seeing billions of cashless transactions which boost formalisation and transparency...It is because of mobile technology that we will enable smooth contactless interface on toll booths,” PM Modi said on the occasion. 
+                He also thanked the telecom sector for their innovation and efforts due to which the country worked smoothly during the pandemic. He also touched on the issue of mobile technology being used to embark on Covid-19 vaccination drive.
+                Reliance Industries Limited chairman Mukesh Ambani talked about the digital transformation in India playing a major role in keeping things running smoothly even during the Covid-19 lockdown. He also stressed on the importance of getting an affordable smartphone to millions of underprivileged people.
+                
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+         <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/600mp_1607232432903_1607232448828.jpg">
+            <div class="card-body">
+                <h2 class="card-title">Samsung is working on a 600-megapixel mobile camera sensor</h2>
+            </div>
+            <button class="modal-open" data-modal="modal23">Read More</button>
+            <div class="modal" id="modal23">
+              <div class="modal-content">
+              <div class="modal-header" >Samsung is working on a 600-megapixel mobile camera sensor<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                   </div> <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/600mp_1607232432903_1607232448828.jpg">
+
+              <div class="modal-body">Samsung is reportedly working on a whopping 600-megapixel camera sensor.
+                Tipster Ice Universe has revealed a slide from what appears to be an internal document or presentation. The slide further details how Samsung aims to deliver the 600-megapixel camera sensor.
+                According to the slide, Samsung plans to offer a higher resolution camera sensor as 4K and 8K videos are increasingly becoming mainstream. The company also wants its ISOCELL to solve the problem of the camera bump. GSMArena in its report points out that a 1/0.57-inch sensor would cover about 12% of the real estate on the back panel. It would protrude about 22mm.
+                The sensor is equipped with a nine-pixel binning technology and Smart-ISO. It has 0.7um pixel size, 1/1.52-inch optical format, and 108-megapixel resolution.
+                “Samsung’s innovative ISOCELL Plus technology makes pixels in the ISOCELL HM2 more powerful and gives them the ability to produce vivid, lifelike color. The technology uses special materials to separate pixels and reduce interference between them. This improves color fidelity and light sensitivity, so every sky looks just as bright and blue in your images as it did in real life,” the company explains on its website.
+                
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+          </div>
+         </div> </div>
+    
+    
+             <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+         <div class="card">
+               <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/android_auto_1606979087473_1606979170374_1607227374129.png" alt="">
+                <div class="card-body">
+                <h2 class="card-title">Android Auto may soon add GUI for messaging apps</h2>
+            </div>
+            <button class="modal-open" data-modal="modal24">Read More</button>
+            <div class="modal" id="modal24">
+              <div class="modal-content">
+              <div class="modal-header" >Android Auto may soon add GUI for messaging apps<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                   </div> <img src="https://images.hindustantimes.com/tech/img/2020/12/06/960x540/android_auto_1606979087473_1606979170374_1607227374129.png" alt="">
+              <div class="modal-body">Google is working on an Android Auto interface for messaging applications, reports autoevolution.com. The update will essentially allow the display of dedicated icons for select messaging applications.
+                According to a Redditor, the interface will be initially available for applications such as Messages and WhatsApp. The feature appears to be in still testing phase as the icons for messaging applications as not “so functional.”
+                The Redditor also explains what the GUI for messaging applications may offer to Android Auto users.
+                “Once launched, Android Auto should start showing notifications of messages coming from that app. But really, no. It doesn't do that. Any SMS or WhatsApp message will still be shown in the notification centre, and not inside the own app,” the developer said.
+                There is no word on when the feature will be available to the stable version of Android Auto.
+                
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+          </div>
+            </div>   
+            </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img src="https://images.hindustantimes.com/tech/img/2020/12/13/960x540/IMG_0862_1607859323831_1607859334790.jpg" class="card-img img-fluid">
+            <div class="card-body">
+                <h2 class="card-title">GoPro Hero 9 Black review: Action camera on steroids</h2>
+            </div>
+            <button class="modal-open" data-modal="modal25">Read More</button>
+            <div class="modal" id="modal25">
+              <div class="modal-content">
+              <div class="modal-header" >GoPro Hero 9 Black review: Action camera on steroids<button class="icon modal-close  " > <i class="material-icons ">close</i> </button>
+                   </div>            <img src="https://images.hindustantimes.com/tech/img/2020/12/13/960x540/IMG_0862_1607859323831_1607859334790.jpg" class="card-img img-fluid">
+
+              <div class="modal-body">GoPro cameras have been one of the most versatile ones in the industry. There’s almost a zero chance of mentioning ‘action cameras’ without ‘GoPro’ being a part of the chat and the fact that with each year these cams get better and more powerful, just proves their worth. With Hero 9 Black, the firm is trying to do the same. There are more features than before and so is the price.
+                The highlight this time is the inclusion of two colour screens. While all of this sounds nice and something that all traveller vloggers should have, what might make them think twice is the price, which also increases every year. The Hero 9 Black is available at ₹49,500 in India and considering that price is a major factor for a product here, things do get interesting for the Hero 9 Black.
+                We were able to use this action camera in different situations while travelling recently. If you are a traveller and love to shoot while you’re on the move, here’s what we have to tell you.
+                Design and displays
+                GoPro is going with the ‘bigger is better’ theory when it comes to Hero 9 Black. The action camera has a bigger main screen, a completely new colour display at the front and an overall larger body, all of which results in a heavier product. If you are coming from Hero 7 or older, you will definitely feel the difference. However, it’s not something that will bother you a lot. The good part is that GoPro has stuck with the familiar design and is not alienating its fans.
+                GoPro Hero 9 Black.
+                Coming to the screens, this time, the Hero 9 Black has an additional 1.4-inch colour screen at the front that is better in every way than what was there in Hero 7 or 8 and more useful than ever as it brings more ‘vlogging’ appeal to the entire package. Although it’s not touch-sensitive, we like it that way since it prevents accidental touches. However, you do get some useful shooting information on it and a live preview. What’s not so good is that it is a square screen. This means that it shows less than what it captures but does get the basic job done. And that’s not all, the primary screen has grown bigger from 2-inch to 2.27-inch, which is always good news.
+                So, a new coloured screen at the front and a larger main display are why you get a bigger battery. But with larger screens and body, it’s not just batteries that aren’t backwards compatible with older GoPros but it’s also the housing and old cases.
+              </div>
+              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+              </div>
+          </div>
+         </div>
+             </div>
+               </div>
         
-        </div>
-        
+         </div>
+
     </section>
 
+
+
+    <script>
+
+        var modalBtns = document.querySelectorAll('.modal-open')
+        modalBtns.forEach(function(btn){
+            btn.onclick=function(){
+                var modal =btn.getAttribute('data-modal');
+                document.getElementById(modal).style.display = "block";
+            };
+        });
+
+        var closeBtns = document.querySelectorAll('.modal-close');
+        
+        closeBtns.forEach(function(btn) {
+            btn.onclick = function(){
+                var modal = (btn.closest(".modal").style.display ="none");
+            };
+        });
+
+        window.onclick =function(e){
+            if(e.target.className == "modal") {
+                e.target.style.display = "none";
+            }
+        };
+
+    </script>
 
 
     <footer class="footer_style">
@@ -364,6 +846,8 @@
                         <li><a href="#ourservices">Services</a></li>
                         <li><a href="#ourteam1">Team</a></li>
                         <li><a href="blog.html"> Latest Blogs</a></li>
+                        <li><a href="Registration.html">Login/Register</a></li>
+
                         <li><a href="#contact">Contact Us</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                       </ul>
