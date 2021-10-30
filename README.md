@@ -1,2 +1,2 @@
-https://scssindiatechnologies.github.io/CB-Blogs/
-# December
+https://scssindiatechnologies.github.io/CB-Blogs1/
+#December
